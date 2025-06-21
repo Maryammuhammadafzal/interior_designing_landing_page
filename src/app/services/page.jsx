@@ -25,8 +25,51 @@ const ServicesPage = () => {
         </div>
 
         <div className="xl:w-[95%] w-full mx-auto h-auto py-4 gap-5 flex flex-col">
-          <div className="navigation w-full flex justify-center items-center">
-                <button className="rounded-lg active:bg-[#C89C65] active:text-white"></button>
+          <div className="navigation w-full flex justify-evenly items-center">
+            <button className="rounded-lg shrink-0 text-2xl lowercase relative focus:bg-[#C89C65] focus:text-white bg-transparent border border-[#C89C65] text-[#C89C65] py-3 px-10 font-mono group">
+              Residential Design
+              <span className="group-focus:block hidden absolute -bottom-4 left-[38%]">
+                <Image
+                  src="/images/vector.png"
+                  alt="vector-image"
+                  width={40}
+                  height={40}
+                />
+              </span>{" "}
+            </button>
+            <button className="rounded-lg shrink-0 text-2xl lowercase relative focus:bg-[#C89C65] focus:text-white bg-transparent border border-[#C89C65] text-[#C89C65] py-3 px-10 font-mono group">
+              Commercial Design
+              <span className="group-focus:block hidden absolute -bottom-4 left-[38%]">
+                <Image
+                  src="/images/vector.png"
+                  alt="vector-image"
+                  width={40}
+                  height={40}
+                />
+              </span>{" "}
+            </button>
+            <button className="rounded-lg shrink-0 text-2xl lowercase relative focus:bg-[#C89C65] focus:text-white bg-transparent border border-[#C89C65] text-[#C89C65] py-3 px-10 font-mono group">
+              Custom Furniture
+              <span className="group-focus:block hidden absolute -bottom-4 left-[38%]">
+                <Image
+                  src="/images/vector.png"
+                  alt="vector-image"
+                  width={40}
+                  height={40}
+                />
+              </span>{" "}
+            </button>
+            <button className="rounded-lg shrink-0 text-2xl lowercase relative focus:bg-[#C89C65] focus:text-white bg-transparent border border-[#C89C65] text-[#C89C65] py-3 px-10 font-mono group">
+              Space Optimization
+              <span className="group-focus:block hidden absolute -bottom-4 left-[38%]">
+                <Image
+                  src="/images/vector.png"
+                  alt="vector-image"
+                  width={40}
+                  height={40}
+                />
+              </span>{" "}
+            </button>
           </div>
         </div>
       </div>
