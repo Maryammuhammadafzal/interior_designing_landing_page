@@ -10,7 +10,7 @@ const PromisePage = () => {
             <h2 className="text-primary max-w-xl sm:leading-16 md:leading-20 md:text-6xl text-5xl font-sans font-bold">
               Why We Stand Out
             </h2>
-            <span className="absolute -bottom-4 md:bottom-20 md:right-[5%] lg:right-[10%] xl:right-[30%] mx-3">
+            <span className="absolute -bottom-4 md:bottom-10 md:left-[15%] lg:right-[10%] xl:left-[10%] mx-3">
               <Image
                 src="/images/line2.png"
                 alt="line"
@@ -33,7 +33,7 @@ const PromisePage = () => {
                   height={40}
                 />
               </div>
-              <h5 className="text-5xl lowercase font-mono text-secondary">
+              <h5 className="text-4xl lowercase font-mono text-secondary">
                 Creative Brilliance
               </h5>
               <p className="text-base text-primary">
@@ -43,14 +43,14 @@ const PromisePage = () => {
             <div className="flex flex-col gap-0 text-center w-[250px] h-[160px] justify-center items-center p-1">
               <div className="icon py-2">
                 <Image
-                  src="/images/icon1.png"
+                  src="/images/icon2.png"
                   alt="icon"
                   width={40}
                   height={40}
                 />
               </div>
-              <h5 className="text-5xl lowercase font-mono text-secondary">
-                Creative Brilliance
+              <h5 className="text-4xl lowercase font-mono text-secondary">
+                Impeccable Detailing
               </h5>
               <p className="text-base text-primary">
                 Innovative ideas that set your space apart.
@@ -59,14 +59,14 @@ const PromisePage = () => {
             <div className="flex flex-col gap-0 text-center w-[250px] h-[160px] justify-center items-center p-1">
               <div className="icon py-2">
                 <Image
-                  src="/images/icon1.png"
+                  src="/images/icon3.png"
                   alt="icon"
                   width={40}
                   height={40}
                 />
               </div>
-              <h5 className="text-5xl lowercase font-mono text-secondary">
-                Creative Brilliance
+              <h5 className="text-4xl lowercase font-mono text-secondary">
+                Green Innovations
               </h5>
               <p className="text-base text-primary">
                 Innovative ideas that set your space apart.
@@ -75,14 +75,14 @@ const PromisePage = () => {
             <div className="flex flex-col gap-0 text-center w-[250px] h-[160px] justify-center items-center p-1">
               <div className="icon py-2">
                 <Image
-                  src="/images/icon1.png"
+                  src="/images/icon4.png"
                   alt="icon"
                   width={40}
                   height={40}
                 />
               </div>
-              <h5 className="text-5xl lowercase font-mono text-secondary">
-                Creative Brilliance
+              <h5 className="text-4xl lowercase font-mono text-secondary">
+                Personalized Touch
               </h5>
               <p className="text-base text-primary">
                 Innovative ideas that set your space apart.
