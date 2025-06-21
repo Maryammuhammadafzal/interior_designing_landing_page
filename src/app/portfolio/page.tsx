@@ -55,7 +55,7 @@ const slides = [
 
 const PortfolioPage = () => {
   var settings = {
-    // dots: true,
+    dots: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
