@@ -5,8 +5,8 @@ import React from "react";
 import Slider from "react-slick";
 // import image from ''
 
-// @import "slick-carousel/slick/slick.css";
-// @import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const slides = [
   {
@@ -104,7 +104,7 @@ const PortfolioPage = () => {
             <h2 className="text-primary max-w-xl sm:leading-16 md:leading-20 md:text-6xl text-5xl font-sans font-bold">
               Showcasing Our Artistry
             </h2>
-            <span className="absolute -bottom-4 md:bottom-20 md:right-[5%] lg:right-[10%] xl:right-[30%] mx-3">
+            <span className="absolute -bottom-4 md:bottom-10 md:left-[40%] lg:left-[30%] xl:left-[20%] mx-3">
               <Image
                 src="/images/line2.png"
                 alt="line"
@@ -116,8 +116,8 @@ const PortfolioPage = () => {
           </div>
         </div>
 
-           <div id="features" className="xl:w-[95%] overflow-hidden w-full h-auto py-4 mx-auto">
-      <Slider {...settings} className="flex flex-row gap-3">
+           <div id="features" className="xl:w-[95%] overflow-hidden w-full h-[500px] flex py-4 mx-auto">
+      <Slider {...settings} className="flex mx-auto flex-row gap-3">
         {slides.map(({ id, image, title, description }) => (
           <div
             key={id}
