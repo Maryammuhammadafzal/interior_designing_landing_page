@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Geist_Mono } from "next/font/google";
+import { Montserrat, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -10,9 +10,11 @@ const montserrat = Montserrat({
   display: "swap"
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const greatVibes = Great_Vibes({
+  variable: "--font-great-vibes",
   subsets: ["latin"],
+  weight : '400',
+  display : 'swap'
 });
 
 export const metadata: Metadata = {
@@ -28,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${greatVibes.variable} antialiased`}
       >
         <Header/>
         {children}
