@@ -3,6 +3,7 @@ import HeroPage from "./hero/page";
 import AboutPage from "./about/page";
 import ServicesPage from "./services/page";
 import PromisePage from "./promises/page";
+import PortfolioPage from "./portfolio/page";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutPage />
       <ServicesPage />
       <PromisePage />
+      <PortfolioPage/>
     </div>
   );
 }
