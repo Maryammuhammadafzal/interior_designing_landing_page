@@ -54,7 +54,7 @@ const slides = [
 ];
 
 const PortfolioPage = () => {
-  var settings = {
+  const settings = {
     dots: true,
     speed: 500,
     slidesToShow: 4,
