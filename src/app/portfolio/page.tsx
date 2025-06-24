@@ -46,7 +46,7 @@ const slides = [
   },
   {
     id: 6,
-    image: "/images/portfolio-image6.jpg",
+    image: "/images/portfolio-image3.jpg",
     title: "Minimalist Decor",
     description:
       "Sleek and minimalist decor solutions for a modern, clutter-free living space.",
@@ -57,8 +57,8 @@ const PortfolioPage = () => {
   const settings = {
     dots: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     className: "center",
     centerMode: true,
@@ -68,32 +68,32 @@ const PortfolioPage = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     pauseOnHover: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: true,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       initialSlide: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="flex w-full h-auto justify-center items-center">
@@ -117,11 +117,11 @@ const PortfolioPage = () => {
         </div>
 
            <div id="features" className=" bg-amber-600 overflow-hidden min-w-[100%] h-[500px] flex py-4">
-      <Slider {...settings} className="flex mx-auto bg-amber-300 w-full flex-row">
+      <Slider {...settings} className="flex bg-amber-300 w-full flex-row">
         {slides.map(({ id, image, title, description }) => (
           <div
             key={id}
-            className="w-[330px] bg-amber-300 h-[460px] relative group font-sans"
+            className="w-[330px] bg-amber-300 h-[460px] mx-10 relative group font-sans"
           >
             <Image
               src={image}
