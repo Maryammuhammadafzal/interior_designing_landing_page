@@ -99,7 +99,7 @@ const PortfolioPage = () => {
   return (
     <div className="flex w-full h-auto justify-center items-center">
       <div className="flex flex-col gap-10 w-full py-10 h-auto">
-        <div className="headings  w-[90%] py-4">
+        <div className="headings mx-auto  w-[90%] py-4">
           <h4 className="font-mono text-4xl text-secondary">Portfolio</h4>
           <div className="w-full h-auto py-2 relative flex">
             <h2 className="text-primary max-w-xl sm:leading-16 md:leading-20 md:text-6xl text-5xl font-sans font-bold">
@@ -117,7 +117,7 @@ const PortfolioPage = () => {
           </div>
         </div>
 
-        <div id="features" className="bg-amber-600 min-w-full h-[500px] py-4">
+        <div id="features" className=" min-w-full overflow-hidden h-[500px] py-4">
       <Slider {...settings} className="w-full">
         {slides.map(({ id, image, title, description }) => (
           <div
@@ -132,7 +132,7 @@ const PortfolioPage = () => {
               placeholder="blur"
               blurDataURL="/images/placeholder.jpg"
             />
-            <div className="overlay group-hover:block hidden w-full h-full bg-black/50 absolute top-0 rounded-[20px] left-0 z-10" />
+            <div className="overlay group-hover:block hidden w-full h-full bg-black/50 absolute top-0 left-0 z-10" />
             <div className="w-full h-full group-hover:flex hidden absolute top-0 left-0 justify-center items-center z-20">
               <div className="flex flex-col gap-3 text-white text-center items-center px-4">
                 <div className="h-[40px] w-[40px] text-white rounded-full flex justify-center items-center border border-white">
