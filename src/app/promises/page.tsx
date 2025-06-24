@@ -23,7 +23,7 @@ const PromisePage = () => {
         </div>
 
         <div className="xl:w-[95%] w-full mx-auto h-auto py-4 gap-8 flex flex-col">
-          <div className="navigation hidden w-full md:flex flex-wrap h-auto gap-4 justify-evenly items-center">
+          <div className="navigation w-full flex flex-wrap h-auto gap-4 justify-evenly items-center">
             <div className="flex flex-col gap-0 text-center w-[250px] h-[160px] justify-center items-center p-1">
               <div className="icon py-2">
                 <Image
