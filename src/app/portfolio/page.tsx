@@ -55,46 +55,47 @@ const slides = [
 
 const PortfolioPage = () => {
   const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
+  dots: true,
+  speed: 500,
+  slidesToShow: 4, // Reduced to ensure spacing fits
+  slidesToScroll: 4,
+  initialSlide: 0,
+  centerMode: true,
+  //centerPadding: '20px', // Adjusted for spacing
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  cssEase: 'linear',
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+        centerPadding: '20px',
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerPadding: '15px',
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '10px',
       },
-    ],
-  };
+    },
+  ],
+};
   return (
     <div className="flex w-full h-auto justify-center items-center">
       <div className="flex flex-col gap-10 w-full py-10 h-auto">
@@ -116,18 +117,20 @@ const PortfolioPage = () => {
           </div>
         </div>
 
-           <div id="features" className=" bg-amber-600 overflow-hidden min-w-[100%] h-[500px] flex py-4">
-      <Slider {...settings} className="flex bg-amber-300 w-full flex-row">
+        <div id="features" className="bg-amber-600 min-w-full h-[500px] py-4">
+      <Slider {...settings} className="w-full">
         {slides.map(({ id, image, title, description }) => (
           <div
             key={id}
-            className="w-[330px] bg-amber-300 h-[460px] mx-10 relative group font-sans"
+            className="w-[330px] h-[460px] mx-2 relative group font-sans" 
           >
             <Image
               src={image}
               alt={title}
               fill
-              className="object-cover rounded-[20px]"
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL="/images/placeholder.jpg"
             />
             <div className="overlay group-hover:block hidden w-full h-full bg-black/50 absolute top-0 rounded-[20px] left-0 z-10" />
             <div className="w-full h-full group-hover:flex hidden absolute top-0 left-0 justify-center items-center z-20">
@@ -145,6 +148,7 @@ const PortfolioPage = () => {
                   width={150}
                   height={20}
                   className="object-contain"
+                  onError={() => console.error("Failed to load image: /images/line4.png")} // Debugging
                 />
               </div>
             </div>

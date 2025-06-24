@@ -124,3 +124,15 @@
 @theme {
   --breakpoint-xs : 30rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-slide {
+  margin: 0 8px; /* Adjust for desired spacing (8px = 0.5rem) */
+}
+
+.slick-list {
+  margin: 0 -8px; /* Counteract slide margins to prevent overflow */
+}
