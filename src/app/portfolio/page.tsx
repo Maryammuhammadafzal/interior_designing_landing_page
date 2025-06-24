@@ -68,37 +68,37 @@ const PortfolioPage = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
   };
   return (
     <div className="flex w-full h-auto justify-center items-center">
-      <div className="flex flex-col gap-10 w-[90%] max-w-7xl py-10 h-auto">
-        <div className="headings py-4">
+      <div className="flex flex-col gap-10 w-full py-10 h-auto">
+        <div className="headings  w-[90%] py-4">
           <h4 className="font-mono text-4xl text-secondary">Portfolio</h4>
           <div className="w-full h-auto py-2 relative flex">
             <h2 className="text-primary max-w-xl sm:leading-16 md:leading-20 md:text-6xl text-5xl font-sans font-bold">
@@ -116,12 +116,12 @@ const PortfolioPage = () => {
           </div>
         </div>
 
-           <div id="features" className="xl:w-[95%] overflow-hidden w-full h-[500px] flex py-4 mx-auto">
-      <Slider {...settings} className="flex mx-auto flex-row gap-3">
+           <div id="features" className=" bg-amber-600 overflow-hidden min-w-[100%] h-[500px] flex py-4">
+      <Slider {...settings} className="flex mx-auto bg-amber-300 w-full flex-row">
         {slides.map(({ id, image, title, description }) => (
           <div
             key={id}
-            className="w-[330px] h-[460px] mx-auto relative group font-sans"
+            className="w-[330px] bg-amber-300 h-[460px] relative group font-sans"
           >
             <Image
               src={image}

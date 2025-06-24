@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className="footer w-[95%] font-sans mx-auto min-h-[620px] rounded-3xl flex justify-center items-center bg-cover bg-center relative"
+      className="footer w-[95%] font-sans my-10 mx-auto min-h-[620px] rounded-3xl flex justify-center items-center bg-cover bg-center relative"
       style={{ backgroundImage: `url('/images/footer-image.jpg')` }}
     >
       <div className="overlay w-full h-full bg-black/10 absolute top-0 rounded-[20px] left-0 z-10"></div>

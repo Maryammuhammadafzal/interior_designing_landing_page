@@ -8,11 +8,11 @@ const TestimonialPage = () => {
           <h4 className="font-mono text-4xl lowercase text-secondary">
             Testimonials
           </h4>
-          <div className="w-full h-auto py-2 relative flex">
-            <h2 className="text-primary max-w-xl sm:leading-16 md:leading-20 md:text-6xl text-5xl font-sans font-bold">
-              Why We Stand Out
+<div className="w-full h-auto py-2 relative flex">
+            <h2 className="text-primary max-w-xl leading-20 md:text-6xl text-5xl font-sans font-bold">
+             Words That Inspire Us
             </h2>
-            <span className="absolute -bottom-4 md:bottom-10 md:left-[15%] lg:right-[10%] xl:left-[10%] mx-3">
+            <span className="absolute -bottom-10 md:bottom-12 md:right-[10%] lg:right-[20%] xl:right-[40%] mx-3">
               <Image
                 src="/images/line2.png"
                 alt="line"
